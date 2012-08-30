@@ -434,7 +434,7 @@ class Rocco
 
   # Convert Markdown to classy HTML.
   def process_markdown(text)
-    Markdown.new(text, :smart).to_html
+    Markdown.new(text).to_html
   end
 
   # We `popen` a read/write pygmentize process in the parent and
